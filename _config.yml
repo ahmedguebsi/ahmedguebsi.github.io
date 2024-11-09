@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : " Ahmed Guebsi/ "
+title                    : " Ahmed Guebsi "
 title_separator          : "-"
 name                     : &name "Ahmed Guebsi"
 description              : &description "Junior AI Backend Developer"
@@ -21,14 +21,14 @@ repository               : "ahmedguebsi/ahmedguebsi.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  avatar           : "profile.jpg"
+  name             : "Ahmed Guebsi"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "A skilled junior AI Engineer with deep passion for building scalable and robust AI systems "
   location         : "Tunisia"
-  employer         : "Red Brick University"
+  employer         : "AVAXIA GROUP"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "ahmed.guebsi@enis.tn" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
@@ -44,7 +44,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
+  github           : "ahmedguebsi"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 

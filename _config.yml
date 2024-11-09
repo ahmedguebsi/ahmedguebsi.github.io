@@ -21,7 +21,7 @@ repository               : "ahmedguebsi/ahmedguebsi.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.jpg"
+  avatar           : "profile.png"
   name             : "Ahmed Guebsi"
   pronouns         : # example: "she/her"  
   bio              : "A skilled junior AI Engineer with deep passion for building scalable and robust AI systems "

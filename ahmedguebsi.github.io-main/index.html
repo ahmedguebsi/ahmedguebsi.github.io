@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio - Ahmed Guebsi</title>
+
+    <!-- bootstrap css cdn link  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+    crossorigin="anonymous">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icon cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <!-- for adding animation to website we have use AOS library 
+    AOS Library css file cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS, jQuery, and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+  </head>
+  <body>
+    <!-- Navbar Section (Inside particles container) -->
+    <nav
+    id="navbar-top"
+    class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
+    style="position: fixed; left: 0; width: 100%; z-index: 2;"
+   >
+  <div class="container-fluid px-5">
+    <a class="navbar-brand fs-4" href="#home" style="color: #05195f;">HOME</a>
+    <button
+      class="nav-menu d-md-none"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+    >
+      <i class="bi bi-menu-button-fill"></i>
+    </button>
+    <div
+      class="collapse navbar-collapse justify-content-center"
+      id="navbarNav"
+    >
+      <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#INTRO">Intro</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#timeline">Timeline</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#blog">Posts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+    <!-- navbar and home section starts  -->
+    <section class="home pt-5 d-flex flex-column align-items-center justify-content-center position-relative" id="home" style="min-height: 100vh; overflow: hidden;">
+  
+      <!-- particles.js container (Background) -->
+      <div id="particles-js" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;"></div>
+      
+      <!-- Section content (Centered and overlaying particles) -->
+      <div class="d-flex flex-column align-items-center justify-content-center w-100 position-relative" style="z-index: 1;">
+        
+        <!-- Image Section (Centered) -->
+        <div class="d-flex justify-content-center w-100 mb-4">
+          <img src="images/graduationahmed.jpg" class="img-fluid rounded-circle" style="width: 100%; max-width: 200px; height: auto;" alt="Ahmed's Image" />
+        </div>
+
+        <!-- Text Section (Centered) -->
+        <div class="col-10 col-md-6 text-center mt-4">
+          <h1 style="color:#05195f;">
+            <span>Ahmed Guebsi</span>
+          </h1>
+          <p>
+            <span style="color:rgba(0, 0, 0, .5)">Hi, I'm a Data Scientist | Machine Learning Engineer specializing in </span>Generative AI <span style="color:rgba(0, 0, 0, .5)">and</span> Large Language Models (LLMs). 
+            Enthusiastic, driven, and always eager to tackle new challenges🌟.
+
+          </p>
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="https://x.com/ahmed-guebsi">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item social-buttons">
+              <a href="https://github.com/ahmedguebsi">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li class="list-inline-item social-buttons">
+              <a href="https://www.linkedin.com/in/ahmed-guebsi/">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- skill section end here -->
+    <section class="pt-5 pb-2" id="INTRO">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-1"></div>
+        <div class="col-12 col-md-3 d-flex justify-content-center pb-5 pt-3">
+          <img src="images/ahmedimage.jpg" class="img-fluid rounded-circle" style="width: 90%; max-width:200px; " alt="Ahmed's Image" />
+        </div>
+        <div class="col-12 col-md-7 text-center small-text p-4">
+          <p>
+            Hi, I'm Ahmed, a Data Scientist and Machine Learning Engineer.
+            <br><br>
+            I studied a Mathematics-Physics pre-engineering program. My hard work and dedication payed off and allowed me to pursue a master's degree at National Engineering School of Sfax(ENIS).
+            <br><br>
+            During this 3-year master's program, I built a solid foundation in data science through courses in mathematics, probability, statistical inference, optimization, and artificial intelligence.
+            <br><br>
+            I would describe myself as enthusiastic, driven, curious, and always eager to tackle new challenges🚀.
+            <br><br>
+            I'm particularly drawn to the challenge of leveraging <span style="color: #0a2585">LLMs and working on cutting-edge technologies including fine-tuning and Retrieval Augmented Generation (RAG)🌟</span>.
+          </p>
+        </div>
+        <div class="col-12 col-md-1"></div>
+      </div>
+    </section>    
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section justify-content-center mb-0 pb-0">
+      <!-- Section Title -->
+      <div class="container section-title pb-0 pt-2" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p>Below are some of my skills, and always eager to learn more and explore new frontiers 🔍.</p>
+      </div><!-- End Section Title -->
+      <div class="container justify-content-center mt-0">
+        <div class="row justify-content-center gy-4 m-0">
+          <div class="col-12 col-md-4 mb-2" data-aos="fade-up" data-aos-delay="300">
+            <div class="skill-item item-1 position-relative pb-2 pt-1">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
+                </svg>
+                <i class="bi bi-calculator"></i>
+              </div>
+                <h3>Mathematics</h3>
+              <p>I studied a 2-year Mathematics-Physics pre-engineering program. Relevant topics include Linear Algebra, Probability, Statistics, Signal Theory, and Optimization.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-12 col-md-4 mb-2" data-aos="fade-up" data-aos-delay="400">
+            <div class="skill-item item-2 position-relative pb-2 pt-1">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
+                </svg>
+                <i class="bi bi-motherboard"></i>
+              </div>
+                <h3>Generative AI</h3>
+              <p>I have extensive experience leveraging the powerful capabilities of LLMs and building autonomous agents through Prompt Engineering, Fine-tuning, and Retrieval Augmented Generation (RAG). My expertise includes advanced frameworks like LlamaIndex, LangChain, LangGraph, LangSmith, and Ollama. 
+              </p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-12 col-md-4 mb-2" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-item item-3 position-relative pb-2 pt-1">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
+                </svg>
+                <i class="bi bi-cpu"></i>
+              </div>
+              <h3>Artificial Intelligence, Machine Learning</h3>
+              <p>I've worked on different ML/DL algorithms such as CNN and SVM. I'm familiar with Scikit-learn, NLTK, TensorFlow, Keras, and PyTorch.</p>
+            </div>
+          </div><!-- End Service Item -->
+          
+          <div class="col-12 col-md-4 mb-2" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-item item-4 position-relative pb-2 pt-1">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                </svg>
+                <i class="bi bi-code-slash"></i>
+              </div>
+                <h3>Python</h3>
+              <p>Over the past 6 years, I've extensive experience with Python through my pre-engineering studies, academic projects, and professional experience.</p>
+            </div>
+          </div><!-- End Service Item -->
+          <div class="col-12 col-md-4 mb-2" data-aos="fade-up" data-aos-delay="600">
+            <div class="skill-item item-4 position-relative pb-2 pt-1">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
+                </svg>
+                <i class="bi bi-chat-square-text"></i>
+              </div>
+                <h3>Data Engineering</h3>
+              <p>I have experience building real-time data pipelines, leveraging tools such as Kafka, Spark Streaming, Hive, Elasticsearch, and Kibana 
+                to ensure efficient data processing, storage, and visualization.</p>
+            </div>
+          </div><!-- End Service Item -->
+          <div class="col-12 col-md-4 mb-2" data-aos="fade-up" data-aos-delay="500">
+            <div class="skill-item item-5 position-relative pb-2 pt-1">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
+                </svg>
+                <i class="bi bi-calendar4-week icon"></i>
+              </div>
+                <h3>Cloud Platforms</h3>
+              <p>I have experience with AWS, and Azure. I work with Azure to deploy applications as well as use Azure AI Studio to deploy LLM models.
+              </p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+        </div>
+      </div>
+    </section><!-- /Skills Section -->
+    <!-- timeline section starts  -->
+<section class="timeline pb-4" id="timeline">
+  <div class="container section-title pt-2 mb-0 pb-0" data-aos="fade-up">
+    <h2>Timeline</h2>
+    <p>📌 Below my professional experience, I'm ready to tackle the next adventure with enthusiasm!</p>
+  </div><!-- End Section Title -->
+  <div class="row justify-content-center">
+    <!-- Carousel and Testimonial Section -->
+    <div class="col-12 col-md-12" data-aos="slide-left">
+      <div class="heading">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row m-2 p-5">
+                <div class="row">
+                  <div class="col-md-2 d-flex align-items-center justify-content-center">
+                    <img src="images/logoTrustable.png" class="img-fluid" alt="Trustable" />
+                  </div>
+                  <div class="col-md-10">
+                    <h4>LLM-based Multi-Agent System</h4>
+                    <p><strong>ML Engineer Intern - GenAI @ Trustable</strong> | <strong>Paris, France</strong> | <em>Mar 2024 - Aug 2024</em></p>
+                    <p class="text-muted">A POC graph system with a centralized structure, where a central node orchestrates the processes within a group of agents to achieve a high-level goal. Each agent is an expert in a specific task and utilizes tools, such as Bash shell and Bing search, to interact with the external environment.</p>
+                    <p> <strong>Keywords:</strong> Machine learning, Prompt engineering, RAG, Penetration testing, LLMs, Python, Ollama, Faiss, LlamaIndex, LangChain, LangGraph, LangSmith, Gitlab.</p>
+                  </div>                  
+                </div>                
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row m-2 p-5">
+                <div class="row">
+                  <div class="col-md-2 d-flex align-items-center justify-content-center">
+                    <img src="images/sagem.png" class="img-fluid" alt="Sagemcom" />
+                  </div>
+                  <div class="col-md-10">
+                    <h4>Smart Meter Test Plan Generation</h4>
+                    <p><strong>Data Scientist Intern - GenAI @ Sagemcom</strong> | <strong>Tunis, Tunisia</strong> | <em>Oct 2023 - Jan 2024</em></p>
+                    <ul class="text-muted">
+                      <li>Collected and performed exploratory data analysis (EDA) on a smart meter’s requirements and test plans from Word, PDF, and
+                        XLS files using Python-docx, Xls2xlsx, and Pandas libraries.</li>
+                      <li>Fine-tuned Llama-2 model on requirement-test case pairs dataset, using the transformers, bitsandbytes, peft and accelerate Hugging Face libraries.</li>
+                      <li>built a Streamlit application locally to generate a test case based on given requirement using PyTorch and Cudatoolkit.</li>
+                    </ul>
+                    <p> <strong>Keywords:</strong> Smart meters, Deep learning, Transformers, LLMs, QLoRA, PEFT, Python, Pandas, Python-docx, Xls2xlsx. </p>
+                  </div>                  
+                </div>                
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row m-2 p-5">
+                <div class="row">
+                  <div class="col-md-2 d-flex align-items-center justify-content-center">
+                    <img src="images/logoTrustable.png" class="img-fluid" alt="Trustable" />
+                  </div>
+                  <div class="col-md-10">
+                    <h4>AI-Powered chat assistant for pen testers</h4>
+                    <p><strong>Data Scientist Intern - GenAI @ Trustable</strong> | <strong>Tunis, Tunisia</strong> | <em> Jun 2023 - Aug 2023
+                    </em></p>
+                    <ul class="text-muted">
+                      <li>Understood the transformer-based architectures, with a focus on open-source Large Language Models (LLMs).</li>
+                      <li>Gathered and preprocessed penetration tests JSON logs, creating a current session’s summary-next command pairs dataset.</li>
+                      <li>Fine-tuned Llama-2 model to predict the next command using the Transformers, bitsandbytes, and peft Hugging Face libraries.</li>
+                    </ul>
+                    <p> <strong>Keywords:</strong> Python, LLMs, Fine-tuning, PEFT, Transformers, QLoRA, Pandas, Hugging Face, bitsandbytes, PyTorch.</p>
+                  </div>                  
+                </div>                
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row m-2 p-5">
+                <div class="row">
+                  <div class="col-md-2 d-flex align-items-center justify-content-center">
+                    <img src="images/actia.png" class="img-fluid" alt="Actia" />
+                  </div>
+                  <div class="col-md-10">
+                    <h4>MmWave Radar and Camera data fusion for drowsiness detection</h4>
+                    <p><strong>Machine Learning Engineer Intern @ ACTIA</strong> | <strong>Tunis, Tunisia</strong> | <em> Jan 2023 - Jun 2023
+                    </em></p>
+                    <ul class="text-muted">
+                      <li>Preprocessed, labeled drivers’ facial images and tuned the YOLOv4-tiny model to detect drowsiness using Darknet.</li>
+                      <li>Applied signal processing techniques to MmWave radar data and trained an SVM model for drowsiness prediction.</li>
+                      <li>Enhanced detection through decision-level fusion with an equal probability distribution from both camera and radar sensors.</li>
+                    </ul>
+                    <p> <strong>Keywords:</strong> Python, OpenCV, TensorFlow, SciPy, Matplotlib, Seaborn, NumPy, YOLOv4-tiny, SVM, scikit-learn, Darknet.</p>
+                  </div>                  
+                </div>                
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row m-2 p-5">
+                <div class="row">
+                  <div class="col-md-2 d-flex align-items-center justify-content-center">
+                    <img src="images/anpr.png" class="img-fluid" alt="ANPR" />
+                  </div>
+                  <div class="col-md-10">
+                    <h4>MOBIDOC-PROMESSE Platform</h4>
+                    <p><strong> Software Engineering Intern @ ANPR</strong> | <strong>Tunis, Tunisia</strong> | <em> Jun 2022 - Aug 2022
+                    </em></p>
+                    <ul class="text-muted">
+                      <li>Organized a training session for doctors and doctoral students enrolled in the MOBIDOC-PROMESSE program.</li>
+                      <li>Performed an Exploratory Data Analysis on feedback from participants to identify key areas of improvement. </li>
+                      <li>Developed a platform that allows the staff of ANPR to follow up on projects of MOBIDOC doctors using Laravel and MySQL.</li>
+                    </ul>
+                    <p> <strong>Keywords:</strong> Business Communications, Data Analysis, Laravel , MySQL.</p>
+                  </div>                  
+                </div>                
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center">
+            <button
+              class="nextprev-btn rounded-pill prev-btn me-2"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <i class="bi bi-arrow-left-circle-fill prev"></i>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="nextprev-btn rounded-pill next-btn ms-2"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <i class="bi bi-arrow-right-circle-fill next"></i>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- timeline ends here -->
+  <!-- Portfolio -->
+<section class="content-section section mt-5" id="portfolio">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Portfolio</h2>
+    <p>A glimpse into my academic and personal projects that I've done on my own.</p>
+  </div><!-- End Section Title -->
+  
+  <div class="container">
+    <div class="row gy-4"> <!-- Added gy-4 to add vertical spacing between items on smaller screens -->
+      <div class="col-lg-4 col-12">
+        <a class="portfolio-item" data-toggle="modal" href="#portfolioModal1">
+          <span class="caption">
+            <span class="caption-content">
+              <h5 class="mb-0">Bike Stations Data Pipeline</h5>
+              <p class="mb-0">Real-time Data Pipeline for JCDecaux Velib Stations.</p>
+            </span>
+          </span>
+          <img class="portfolio-img" src="images/data2.jpg" alt="">
+        </a>
+      </div>
+      
+      <div class="col-lg-4 col-12">
+        <a class="portfolio-item" data-toggle="modal" href="#portfolioModal2">
+          <span class="caption">
+            <span class="caption-content">
+              <h5 class="mb-0">Smart Plant Pot Monitoring System</h5>
+              <p class="mb-0">Simple application of MLOps for IoT Edge.</p>
+            </span>
+          </span>
+          <img class="portfolio-img" src="images/project2.png" alt="">
+        </a>
+      </div>
+      
+      <div class="col-lg-4 col-12">
+        <a class="portfolio-item" data-toggle="modal" href="#portfolioModal3">
+          <span class="caption">
+            <span class="caption-content">
+              <h5 class="mb-0">Techniques for Fine-tuning LLMs</h5>
+              <p class="mb-0">A collection of notebooks finetuning LLMs for specific NLP tasks (e.g Information Extraction).</p>
+            </span>
+          </span>
+          <img class="portfolio-img" src="images/LLMproject.png" alt="">
+        </a>
+      </div>
+    </div>
+    
+    <div class="container text-center mt-5">
+      <p class="mb-4">To see more of my projects...</p>
+      <a href="https://github.com/ahmedguebsi" class="btn btn-xl btn-dark" target="_blank">
+        Visit My GitHub &nbsp;<i class="fab fa-github"></i>
+      </a>
+    </div>
+  </div>
+</section>
+ <!-- Portfolio Modals -->
+
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <h2>Bike Stations Data Pipeline 🚴‍♂️</h2>
+                <p class="lead">Real-time Data Pipeline for JCDecaux Velib Stations.</p>
+                <p class="lead">Developed a scalable data pipeline to ingest, process, and analyze real-time data from JCDecaux Velib stations. The pipeline utilizes Kafka for streaming, Spark Streaming for real-time data processing, and Elasticsearch for indexing, enabling fast retrieval and monitoring through Kibana dashboards. This system provides insights into bike availability and station usage patterns to improve operational efficiency.</p>
+                <p class="lead">As we can see, the bike stations are displayed on Kibana's geographical map, allowing users to visualize their locations and availability.</p>
+                <img class="img-fluid" src="images/bigdata.png" alt="" style="width: 80%; height: auto;">
+                <p class="lead">You can find the full code and installation guide in the GitHub repository linked below:</p>
+                <div class="lead mb-4">
+                  <a href="https://github.com/chaymahamdi/jcdecaux-bike-data-pipeline" target="blank">https://github.com/chaymahamdi/jcdecaux-bike-data-pipeline</a>
+                </div>
+                <a class="btn btn-dark btn-l" data-dismiss="modal" href="#">
+                  <i class="fa fa-times"></i> Close Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <h3>Smart Plant Pot Monitoring System 🌱</h3>
+                <p class="lead text-left">
+                  A system using Cloud of Things technologies, enabling users to track and manage their plants' health in real-time.
+                  <br>
+                  This project aims to deliver the following functionalities:
+                  <br>
+                  <br>
+                  - <span style="color:#2a27e5;">Monitor Climate Variables:</span> Measure temperature, humidity, and light levels.
+                  <br>
+                  - <span style="color:#2a27e5;">Anomaly Detection:</span> Alert users if an anomaly is detected based on images retrieved from the camera.
+                  <br>
+                  - <span style="color:#2a27e5;">Proximity Alerts:</span> Notify users when they are near the plant and the water level in the pump reaches a pre-defined threshold using Location-Based Services (LBS).
+                </p>
+                <h3 class="lead text-left">* Key project components:</h3>
+                <p class="lead text-left">
+                  <br>
+                  🖥️ Raspberry Pi 4 Model B: The main computing unit.
+                  <br>
+                  📷 Raspberry Pi Wide Angle Camera Module: Captures images for plant anomaly detection.
+                  <br>
+                  🌡️ DHT11 Temperature and Humidity Sensor: Monitors climate parameters.
+                  <br>
+                  * Technologies used:📡 MQTT, 🗄️ MongoDB, 🔗 Node-Red
+                  <br>
+                  * Middleware: 🚀 WildFly, Jakarta Enterprise Edition
+                  <br>
+                  * Machine Learning model: 🧠 SVM (Support Vector Machine)
+                  <br>
+                  * Frontend:📱 PWA (Progressive Web Application)
+                </p>
+                <p class="lead text-left">The system architecture is depicted in the following diagram.</p>
+                <img class="img-fluid" src="images/mlops.png" alt="" style="width: 100%; height: auto;">
+                <div class="lead mb-4">
+                  <b>View this project on GitHub: </b>
+                  <a href="https://github.com/chaymahamdi/Smart-Plant-Pot-System-MLOps-for-IOT-of-things" target="blank">Smart-Plant-Pot-System-MLOps-for-IOT-of-things</a>
+                </div>
+                <a class="btn btn-dark btn-l" data-dismiss="modal" href="#">
+                  <i class="fa fa-times"></i> Close Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <h2>Techniques for Fine-tuning LLMs</h2>
+                <p class="lead">A Seq2Seq fine-tuning pipeline for the task of Information Extraction. Stay tuned for additional pipelines!</p>
+                <img class="img-fluid d-block mx-auto" src="images/transformer.png" alt="Transformer-architecture">
+                <p class="lead">Here, I focused on the T5-small model from Hugging Face to showcase the fine-tuning process. The pipeline provides a clear, step-by-step overview, covering data preprocessing, tokenization, training, and evaluation.</p>
+                <p class="lead">Other promising pipelines leveraging cutting-edge approaches are coming soon!<br> In the meantime, check out some of my other projects.</p>
+                <div class="lead mb-4">
+                  <b>View this project on GitHub: </b>
+                  <a href="https://github.com/chaymahamdi/Finetune-LLM-for-Information-Extraction" target="blank">https://github.com/chaymahamdi/Finetune-LLM-for-Information-Extraction</a>
+                </div>
+                <a class="btn btn-dark btn-l" data-dismiss="modal" href="#">
+                  <i class="fa fa-times"></i> Close Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- blog section starts -->
+    <section class="blog mt-5 pb-5" id="blog">
+      <div class="container section-title pt-2" data-aos="fade-up">
+        <h2>Posts</h2>
+        <p>📚 Below, I share with you my Medium articles, 📖 insightful cheat sheets, and 🗒️ notebooks.</p>
+      </div><!-- End Section Title -->
+      <div class="row gx-2 gy-5" data-aos="fade-up"> <!-- Add gap for consistent spacing -->
+  
+        <div class="blogpost col-md-4 col-12"> <!-- Ensure responsive layout with 4 on medium, 6 on small, 12 on extra-small screens -->
+          <div class="card h-100">
+            <img src="images/metrics.png" class="card-img-top rounded-4" alt="Performance Metrics for Classification" />
+            <div class="card-body px-4">
+              <h4 class="card-title">Performance Metrics for Classification</h4>
+              <p class="text-muted">
+                Cogent cheat sheet to remember the fundamental performance metrics for classification models in supervised learning.
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal1">Read More</a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="blogpost col-md-4 col-12">
+          <div class="card h-100">
+            <img src="images/Agent.png" class="card-img-top rounded-4" alt="Centralized LLM-based Multi-Agent Supervision in LangChain" />
+            <div class="card-body px-4">
+              <h4 class="card-title">Centralized LLM-based Multi-Agent Supervision in LangChain</h4>
+              <p class="text-muted">
+                In my Medium article, we explore the structure and various components of an LLM-based multi-agent system,
+                and walk through how to customize the implementation of LangGraph to integrate chat models.
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal2">Read More</a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="blogpost col-md-4 col-12">
+          <div class="card h-100">
+            <img src="images/datapreparation.png" class="card-img-top rounded-4" alt="Data Preparation Notebook" />
+            <div class="card-body px-4">
+              <h4 class="card-title">Data Preparation Notebook</h4>
+              <p class="text-muted">
+                Understanding your data is the cornerstone of any successful data science project.
+                In this notebook, we'll delve into the data preparation workflow: acquisition, cleansing, exploration, and transformation.
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal3">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- here we will make modals if Read more link is clicked the modal will popup -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images/metricss.png" class="img-fluid" alt="">
+                </div>
+                <div class="content mt-3"> 
+                  <p class="text-muted mt-3">This is a <span style="color:#05195f;">cheat sheet</span> to have an overview of key performance metrics to evaluate classification models in supervised learning.</p>
+                  <p class="text-muted mt-3">It includes the mathematical formulas for each metric: the Confusion Matrix, Precision, F1 Score, Accuracy, Recall, ROC-AUC Curve, and the Classification Report, along with their respective functions in <span style="color:#05195f;">Python’s Scikit-learn library</span>.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              <div class="modal-body px-4">
+                <div class="content mt-3">
+                  <h4 class="card-title mt-3">Centralized Multi-Agent Supervision: Solve with_structured_output NotImplementedError in LangChain</h4>
+                  <p class="text-muted mt-3">Let’s begin with a general overview of LLM-based multi-agent System Architecture:</p>
+                  <p class="text-muted mt-3">
+                   These systems are designed to accomplish high-level goals through the collaboration of multiple task-specific agents. Let’s break down the architecture into three key components:</p>
+                  <h4 class="card-title mt-3">🕵️‍♂️Agents Profiling:</h4>
+                  <p class="text-muted mt-3">Each agent in the system takes on a specific task, defined by its capabilities, constraints, and unique tools to effectively fulfill its role. To define agent profiling, we can proceed with different approaches based on system design, pre-existing datasets, or LLM models. Given the impressive capabilities demonstrated by LLMs, they often serve as the agent’s brain.</p>
+                  <h4 class="card-title mt-3">🔄 Agents Communication:</h4>
+                  <p class="text-muted mt-3">his component forms the critical infrastructure that underpins collective intelligence in our system.</p>
+                  <h4 class="card-title mt-3">🔗Agents environment interface:</h4>
+                  <p class="text-muted mt-3">This interface refers to how agents interact with their external environment, make decisions, and learn from past output actions. For example, it could involve a sandbox environment using a Docker image.</p>
+                  <p class="text-muted mt-3">Then,we focus on the centralized structure with a supervisor chain and address the issue with the with_structured_output method, which is not yet supported by all LangChain 🦜 chat models.</p>
+                </div>
+                <p>Follow the link to read the <a href="https://medium.com/codex/centralized-multi-agent-supervision-solve-with-structured-output-notimplementederror-in-langchain-cc36b71cc2c3">article</a>—I’d love to hear your thoughts or any suggestions you might have! 🌟</p>
+              </div>
+                
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images/notebook.png" class="img-fluid" alt="">
+                </div>
+                <div class="content mt-3">
+                  <p class="text-muted mt-3">Understanding your data is the cornerstone of any successful data science project. In this notebook, 
+                    we'll delve into the data preparation workflow: acquisition, cleansing, exploration, and transformation.</p>
+                    <ul>
+                      <li> Explore data types and scales of measurement 📊.</li> 
+                      <li> Learn about basic data encoding techniques 🔡.</li> 
+                      <li> Discover how to detect and handle missing values 🔍.</li> 
+                      <li> Master the art of identifying outliers 🎯.</li>
+                      <li> Understand the importance of exploratory data analysis, its various types, and how to conduct it effectively. ✅📝</li>
+                    </ul>
+                  <p class="text-muted mt-3">The notebook is a 14-page PDF file, which you can find in this <a href="https://www.linkedin.com/feed/update/urn:li:activity:7119949703370219521?utm_source=share&utm_medium=member_desktop">LinkedIn post</a>. Feel free to comment and share your feedback!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- blog section ends here -->
+
+    <!-- contact section starts -->
+    <section class="contact py-5" id="contact">
+      <div class="heading text-center">
+        <small>Get in Touch</small>
+        <h3>Any Questions? Feel Free to Contact</h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>+216 23 454 595</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-send-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>ahmed.guebsi@enis.tn</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-globe-americas"></i>
+            </div>
+            <div class="col-11">
+              <p>ahmedguebsi@github.io</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
+          <div class="contact-form">
+            <form action="https://formspree.io/f/mvgozzqb" method="POST">
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  placeholder="E-mail"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  name="message"
+                  placeholder="Message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- contact section ends here -->
+
+      <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+    <button
+      type="button"
+      class="btn btn-floating btn-lg rounded-pill"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- footer section starts  -->
+    <footer id="footer" class="footer position-relative light-background">
+      <div class="container">
+        <!--<h3 class="sitename" style="color: #05195f;">Ahmed Guebsi</h3>-->
+        <p>Hope this portfolio gives you a clear insight into my work and passion. I’d love to hear your thoughts, so feel free to reach out. <br>Stay tuned as I continue to share new projects and insights!</p>
+        <div class="social-links d-flex justify-content-center">
+          <a href=""><i class="bi bi-twitter"></i></a>
+          <a href="https://github.com/ahmedguebsi"><i class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/ahmed-guebsi/"><i class="bi bi-linkedin"></i></a>
+          <a href="https://www.instagram.com/ahmed.guebsii/"><i class="bi bi-instagram"></i></a>
+          
+        </div>
+        <div class="container">
+          <div class="copyright">
+            <span>Copyright</span> <strong class="px-1 sitename">@Ahmed Guebsi</strong> <span>2024</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section ends here -->
+
+      <!-- bootstrap javascript cdn link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS library javascript link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // initializing AOS library
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+    </script>
+    <!-- custom js file linking -->
+    <script src="js/script.js"></script>
+     <!-- particles.js and other scripts -->
+     <script src="js/particles.js"></script>
+     <script src="js/app.js"></script>
+ 
+    
+  </body>
+</html>

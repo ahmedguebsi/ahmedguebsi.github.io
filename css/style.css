@@ -332,46 +332,125 @@ ul.social-buttons li a:focus {
 }
 
 /* =====================================================
-   Skills
+   Skills — bento grid
    ===================================================== */
-.skill-card {
-  background-color: var(--color-surface);
-  border: 1px solid var(--color-border);
+.bento-card {
   border-radius: var(--radius-lg);
-  padding: 1.75rem 1.5rem;
-  height: 100%;
+  padding: 1.75rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
   display: flex;
   flex-direction: column;
   transition: transform var(--transition), box-shadow var(--transition),
     border-color var(--transition);
 }
-.skill-card:hover {
+.bento-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-md);
   border-color: transparent;
 }
-.skill-icon {
+.bento-icon {
   width: 48px;
   height: 48px;
   border-radius: 12px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: var(--color-accent-soft);
-  color: var(--color-accent);
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-bottom: 1rem;
+  flex-shrink: 0;
 }
-.skill-card h3 {
-  font-size: 1.1rem;
+.bento-card h3 {
+  font-size: 1.05rem;
   font-weight: 700;
-  color: var(--color-ink);
-  margin: 0 0 0.9rem;
+  margin: 0 0 0.8rem;
   letter-spacing: -0.01em;
+  color: var(--color-ink);
 }
+
+/* ── Hero card: LLM & Agentic ── */
+.bento-hero {
+  background: linear-gradient(135deg, #05195f 0%, #312e81 50%, #6f34fe 100%);
+  border-color: transparent;
+}
+.bento-hero:hover {
+  box-shadow: 0 20px 52px rgba(111, 52, 254, 0.28);
+}
+.bento-hero .bento-icon {
+  background: rgba(255, 255, 255, 0.14);
+  color: rgba(255, 255, 255, 0.95);
+}
+.bento-hero h3 {
+  color: #fff;
+}
+.bento-desc {
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.68);
+  margin: 0 0 1.1rem;
+  line-height: 1.55;
+}
+.skill-chips-light li {
+  background: rgba(255, 255, 255, 0.12) !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  border-color: rgba(255, 255, 255, 0.16) !important;
+  transition: background var(--transition);
+}
+.skill-chips-light li:hover {
+  background: rgba(255, 255, 255, 0.22) !important;
+}
+
+/* ── Accent cards ── */
+.bento-rag   { border-left: 3px solid #0891b2; }
+.bento-rag   .bento-icon { background: #e0f7fa; color: #0891b2; }
+
+.bento-backend { border-left: 3px solid #4f46e5; }
+.bento-backend .bento-icon { background: #e0e7ff; color: #4f46e5; }
+
+.bento-mlops { border-left: 3px solid #059669; }
+.bento-mlops .bento-icon { background: #d1fae5; color: #059669; }
+
+.bento-research { border-left: 3px solid #7c3aed; }
+.bento-research .bento-icon { background: #ede9fe; color: #7c3aed; }
+
+/* ── Programming / languages strip ── */
+.bento-strip {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem 1.1rem;
+  padding: 1rem 1.5rem;
+  background: var(--color-surface-alt);
+}
+.bento-strip:hover {
+  transform: none;
+  box-shadow: none;
+  border-color: var(--color-border);
+}
+.strip-label {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  white-space: nowrap;
+}
+.strip-divider {
+  width: 1px;
+  height: 22px;
+  background: var(--color-border);
+  flex-shrink: 0;
+}
+@media (max-width: 575.98px) {
+  .strip-divider { display: none; }
+}
+
+/* ── Shared chip list ── */
 .skill-chips {
   list-style: none;
-  margin: 0 0 0.25rem;
+  margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -380,16 +459,18 @@ ul.social-buttons li a:focus {
 .skill-chips li {
   font-size: 0.78rem;
   font-weight: 500;
-  padding: 0.32rem 0.65rem;
+  padding: 0.3rem 0.65rem;
   border-radius: 999px;
   background-color: var(--color-surface-alt);
   color: var(--color-ink-soft);
   border: 1px solid var(--color-border);
+  transition: background-color var(--transition), color var(--transition);
+  cursor: default;
 }
-.skill-foot {
-  font-size: 0.85rem;
-  color: var(--color-muted);
-  margin: 0.9rem 0 0;
+.skill-chips li:hover {
+  background-color: var(--color-accent-soft);
+  color: var(--color-accent);
+  border-color: var(--color-accent-soft);
 }
 
 /* =====================================================

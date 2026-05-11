@@ -286,25 +286,85 @@
             <h2 class="section-heading">Experience</h2>
           </div>
 
-          <div class="experience-list">
-            <article class="exp-card" data-aos="fade-up">
-              <div class="exp-mark" aria-hidden="true">A</div>
-              <div class="exp-body">
-                <div class="exp-head">
-                  <h3>AI Backend Developer</h3>
-                  <p class="exp-company">
-                    <span>Avaxia Group</span>
-                    <span class="exp-meta">Tunis, Tunisia · May 2024 – Nov 2025</span>
-                  </p>
-                </div>
+          <div class="exp-tabs" data-aos="fade-up">
+
+            <!-- Tab nav (vertical on desktop, horizontal scroll on mobile) -->
+            <ul class="exp-tab-nav list-unstyled mb-0" role="tablist" aria-label="Work experience">
+              <li role="presentation">
+                <button
+                  class="exp-tab-btn active"
+                  id="tab-avaxia"
+                  data-bs-toggle="tab"
+                  data-bs-target="#panel-avaxia"
+                  type="button"
+                  role="tab"
+                  aria-controls="panel-avaxia"
+                  aria-selected="true"
+                >
+                  <span class="tab-company">Avaxia Group</span>
+                  <span class="tab-period">May 2024 – Nov 2025</span>
+                </button>
+              </li>
+              <li role="presentation">
+                <button
+                  class="exp-tab-btn"
+                  id="tab-regimlab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#panel-regimlab"
+                  type="button"
+                  role="tab"
+                  aria-controls="panel-regimlab"
+                  aria-selected="false"
+                >
+                  <span class="tab-company">RegimLab</span>
+                  <span class="tab-period">May – Oct 2023</span>
+                </button>
+              </li>
+              <li role="presentation">
+                <button
+                  class="exp-tab-btn"
+                  id="tab-datasphera"
+                  data-bs-toggle="tab"
+                  data-bs-target="#panel-datasphera"
+                  type="button"
+                  role="tab"
+                  aria-controls="panel-datasphera"
+                  aria-selected="false"
+                >
+                  <span class="tab-company">Datasphera</span>
+                  <span class="tab-period">Jun – Aug 2022</span>
+                </button>
+              </li>
+              <li role="presentation">
+                <button
+                  class="exp-tab-btn"
+                  id="tab-innovup"
+                  data-bs-toggle="tab"
+                  data-bs-target="#panel-innovup"
+                  type="button"
+                  role="tab"
+                  aria-controls="panel-innovup"
+                  aria-selected="false"
+                >
+                  <span class="tab-company">Innovup</span>
+                  <span class="tab-period">Jul – Sep 2021</span>
+                </button>
+              </li>
+            </ul>
+
+            <!-- Tab panels -->
+            <div class="tab-content exp-tab-content">
+
+              <div class="tab-pane fade show active" id="panel-avaxia" role="tabpanel" aria-labelledby="tab-avaxia" tabindex="0">
+                <h3 class="exp-role">AI Backend Developer</h3>
+                <p class="exp-company-meta">Avaxia Group &nbsp;·&nbsp; Tunis, Tunisia &nbsp;·&nbsp; May 2024 – Nov 2025</p>
                 <ul class="exp-bullets">
                   <li>
                     Architected and shipped <strong>production-grade agentic AI systems</strong>
                     using LangGraph and MCP, orchestrating multi-step tool-calling workflows
                     across <strong>2 enterprise clients</strong> and processing
                     <strong>120K+ documents</strong> through semantic RAG pipelines — lifting
-                    retrieval precision from <strong>61% → 84%</strong> (RAGAS context
-                    precision).
+                    retrieval precision from <strong>61% → 84%</strong> (RAGAS context precision).
                   </li>
                   <li>
                     Engineered <strong>8 production RESTful endpoints</strong> with FastAPI and
@@ -325,8 +385,9 @@
                   </li>
                   <li>
                     Drove code quality through structured PR reviews and a pytest + Selenium
-                    suite over <strong>40+ critical paths</strong> — reaching <strong>78% coverage</strong> and
-                    cutting production incidents by <strong>35%</strong>.
+                    suite over <strong>40+ critical paths</strong> — reaching
+                    <strong>78% coverage</strong> and cutting production incidents by
+                    <strong>35%</strong>.
                   </li>
                 </ul>
                 <ul class="tag-chips" aria-label="Stack">
@@ -336,18 +397,10 @@
                   <li>n8n</li><li>Azure</li><li>ArgoCD</li><li>Docker</li><li>Selenium</li>
                 </ul>
               </div>
-            </article>
 
-            <article class="exp-card" data-aos="fade-up">
-              <div class="exp-mark" aria-hidden="true">R</div>
-              <div class="exp-body">
-                <div class="exp-head">
-                  <h3>Machine Learning Researcher · Intern</h3>
-                  <p class="exp-company">
-                    <span>RegimLab</span>
-                    <span class="exp-meta">Sfax, Tunisia · May 2023 – Oct 2023</span>
-                  </p>
-                </div>
+              <div class="tab-pane fade" id="panel-regimlab" role="tabpanel" aria-labelledby="tab-regimlab" tabindex="0">
+                <h3 class="exp-role">Machine Learning Researcher &middot; Intern</h3>
+                <p class="exp-company-meta">RegimLab &nbsp;·&nbsp; Sfax, Tunisia &nbsp;·&nbsp; May 2023 – Oct 2023</p>
                 <ul class="exp-bullets">
                   <li>
                     Designed a <strong>clinical-grade ADHD detection system</strong> on EEG
@@ -379,18 +432,10 @@
                   <li>XGBoost</li><li>PCA</li><li>VMD</li><li>ICA</li>
                 </ul>
               </div>
-            </article>
 
-            <article class="exp-card" data-aos="fade-up">
-              <div class="exp-mark" aria-hidden="true">D</div>
-              <div class="exp-body">
-                <div class="exp-head">
-                  <h3>Data Science Intern</h3>
-                  <p class="exp-company">
-                    <span>Datasphera</span>
-                    <span class="exp-meta">Tunis, Tunisia · Jun 2022 – Aug 2022</span>
-                  </p>
-                </div>
+              <div class="tab-pane fade" id="panel-datasphera" role="tabpanel" aria-labelledby="tab-datasphera" tabindex="0">
+                <h3 class="exp-role">Data Science Intern</h3>
+                <p class="exp-company-meta">Datasphera &nbsp;·&nbsp; Tunis, Tunisia &nbsp;·&nbsp; Jun 2022 – Aug 2022</p>
                 <ul class="exp-bullets">
                   <li>
                     Delivered an internal NLP chatbot handling <strong>60+ daily queries</strong>
@@ -421,18 +466,10 @@
                   <li>GitHub Actions</li><li>MLflow</li><li>AWS</li>
                 </ul>
               </div>
-            </article>
 
-            <article class="exp-card" data-aos="fade-up">
-              <div class="exp-mark" aria-hidden="true">I</div>
-              <div class="exp-body">
-                <div class="exp-head">
-                  <h3>Software Engineer Intern</h3>
-                  <p class="exp-company">
-                    <span>Innovup</span>
-                    <span class="exp-meta">Tunis, Tunisia · Jul 2021 – Sep 2021</span>
-                  </p>
-                </div>
+              <div class="tab-pane fade" id="panel-innovup" role="tabpanel" aria-labelledby="tab-innovup" tabindex="0">
+                <h3 class="exp-role">Software Engineer Intern</h3>
+                <p class="exp-company-meta">Innovup &nbsp;·&nbsp; Tunis, Tunisia &nbsp;·&nbsp; Jul 2021 – Sep 2021</p>
                 <ul class="exp-bullets">
                   <li>
                     Launched a full-stack project tracking platform (MEAN stack) adopted by
@@ -441,8 +478,9 @@
                     security incidents post-launch.
                   </li>
                   <li>
-                    Designed a behavioral data pipeline capturing <strong>8+ interaction event types</strong>
-                    at roughly <strong>4K events/day</strong> — powering analytics dashboards and
+                    Designed a behavioral data pipeline capturing
+                    <strong>8+ interaction event types</strong> at roughly
+                    <strong>4K events/day</strong> — powering analytics dashboards and
                     personalization models with Pandas and SQL.
                   </li>
                   <li>
@@ -463,8 +501,9 @@
                   <li>Recommenders</li>
                 </ul>
               </div>
-            </article>
-          </div>
+
+            </div><!-- /tab-content -->
+          </div><!-- /exp-tabs -->
         </div>
       </section>
 

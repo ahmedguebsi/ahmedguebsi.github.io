@@ -393,83 +393,158 @@ ul.social-buttons li a:focus {
 }
 
 /* =====================================================
-   Experience
+   Experience — tabbed layout
    ===================================================== */
 .timeline {
   background-color: var(--color-surface-alt);
 }
-.experience-list {
+
+/* Outer wrapper: column on mobile, row on desktop */
+.exp-tabs {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
-  max-width: 920px;
+  max-width: 960px;
   margin: 0 auto;
-}
-.exp-card {
-  display: flex;
-  gap: 1rem;
   background: #fff;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
-  padding: 1.5rem;
-  transition: transform var(--transition), box-shadow var(--transition);
+  overflow: hidden;
 }
-.exp-card:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-md);
+@media (min-width: 768px) {
+  .exp-tabs {
+    flex-direction: row;
+    align-items: stretch;
+  }
 }
-.exp-mark {
-  flex: 0 0 auto;
-  width: 52px;
-  height: 52px;
-  border-radius: 12px;
+
+/* Tab nav */
+.exp-tab-nav {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-highlight) 120%);
-  color: #fff;
-  font-weight: 800;
-  font-size: 1.4rem;
-  letter-spacing: -0.02em;
+  flex-direction: row;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  border-bottom: 2px solid var(--color-border);
+  flex-shrink: 0;
 }
-.exp-body {
+.exp-tab-nav::-webkit-scrollbar { display: none; }
+
+@media (min-width: 768px) {
+  .exp-tab-nav {
+    flex-direction: column;
+    overflow-x: visible;
+    border-bottom: none;
+    border-right: 2px solid var(--color-border);
+    width: 200px;
+  }
+}
+
+/* Individual tab button */
+.exp-tab-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  white-space: nowrap;
+  background: transparent;
+  border: none;
+  padding: 0.9rem 1.25rem;
+  cursor: pointer;
+  position: relative;
+  text-align: left;
+  width: 100%;
+  transition: background-color var(--transition);
+}
+.exp-tab-btn:hover {
+  background-color: var(--color-accent-soft);
+}
+.tab-company {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--color-ink-soft);
+  transition: color var(--transition);
+  display: block;
+}
+.tab-period {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.72rem;
+  color: var(--color-muted);
+  display: block;
+  margin-top: 0.2rem;
+}
+
+/* Active state */
+.exp-tab-btn.active .tab-company {
+  color: var(--color-accent);
+}
+.exp-tab-btn.active {
+  background-color: var(--color-accent-soft);
+}
+
+/* Active indicator — bottom bar on mobile, right bar on desktop */
+.exp-tab-btn::after {
+  content: "";
+  position: absolute;
+  background: transparent;
+  transition: background var(--transition);
+}
+@media (max-width: 767.98px) {
+  .exp-tab-btn::after {
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 2px;
+  }
+}
+@media (min-width: 768px) {
+  .exp-tab-btn::after {
+    top: 0;
+    bottom: 0;
+    right: -2px;
+    width: 2px;
+  }
+}
+.exp-tab-btn.active::after {
+  background: var(--color-accent);
+}
+
+/* Tab content panel */
+.exp-tab-content {
   flex: 1 1 auto;
   min-width: 0;
 }
-.exp-head h3 {
-  font-size: 1.1rem;
+.exp-tab-content .tab-pane {
+  padding: 1.75rem 2rem;
+}
+@media (max-width: 575.98px) {
+  .exp-tab-content .tab-pane {
+    padding: 1.25rem;
+  }
+}
+
+/* Panel inner elements */
+.exp-role {
+  font-size: 1.15rem;
   font-weight: 700;
-  margin: 0 0 0.15rem;
   color: var(--color-ink);
+  margin: 0 0 0.3rem;
 }
-.exp-company {
-  margin: 0;
-  font-size: 0.95rem;
+.exp-company-meta {
+  font-size: 0.9rem;
   color: var(--color-ink-soft);
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-.exp-company > span:first-child {
-  font-weight: 600;
-  color: var(--color-accent-strong);
-}
-.exp-meta {
-  color: var(--color-muted);
-  font-size: 0.88rem;
+  margin: 0 0 1.25rem;
 }
 .exp-bullets {
   list-style: none;
-  margin: 1rem 0 0.75rem;
+  margin: 0 0 1rem;
   padding: 0;
 }
 .exp-bullets li {
   position: relative;
   padding-left: 1.1rem;
-  margin-bottom: 0.55rem;
+  margin-bottom: 0.6rem;
   font-size: 0.95rem;
   color: var(--color-ink-soft);
-  line-height: 1.55;
+  line-height: 1.6;
 }
 .exp-bullets li::before {
   content: "";
@@ -501,11 +576,6 @@ ul.social-buttons li a:focus {
   background: var(--color-accent-soft);
   color: var(--color-accent-strong);
   font-weight: 500;
-}
-
-@media (max-width: 575.98px) {
-  .exp-card { padding: 1.15rem; }
-  .exp-mark { width: 44px; height: 44px; font-size: 1.15rem; }
 }
 
 /* =====================================================

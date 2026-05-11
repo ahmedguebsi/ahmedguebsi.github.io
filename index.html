@@ -30,7 +30,7 @@
     <meta name="twitter:description" content="LLM systems, RAG pipelines, production Python. Tunisia." />
     <meta name="twitter:image" content="images/graduationahmed.jpg" />
 
-    <link rel="icon" type="image/jpeg" href="images/ahmedimage.jpg" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
 
     <!-- Bootstrap 5 (single load) -->
     <link
@@ -95,7 +95,7 @@
         class="home d-flex flex-column align-items-center justify-content-center position-relative"
         id="home"
       >
-        <div id="particles-js" aria-hidden="true"></div>
+        <canvas id="hero-canvas" aria-hidden="true"></canvas>
 
         <div class="hero-content container text-center position-relative">
           <img
@@ -116,7 +116,7 @@
           <div class="hero-cta">
             <a class="btn btn-primary btn-cta" href="#contact">Get in touch</a>
             <a
-              class="btn btn-outline-dark btn-cta"
+              class="btn btn-outline-light btn-cta"
               href="https://github.com/ahmedguebsi"
               target="_blank"
               rel="noopener noreferrer"
@@ -828,34 +828,44 @@
             <div class="col-md-5 col-12 contact-details" data-aos="fade-right">
               <ul class="contact-list list-unstyled">
                 <li>
-                  <i class="bi bi-envelope-fill" aria-hidden="true"></i>
-                  <a href="mailto:ahmed.guebsi@enis.tn">ahmed.guebsi@enis.tn</a>
+                  <a href="mailto:ahmed.guebsi@enis.tn" class="contact-row">
+                    <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+                    ahmed.guebsi@enis.tn
+                  </a>
                 </li>
                 <li>
-                  <i class="bi bi-telephone-fill" aria-hidden="true"></i>
-                  <a href="tel:+21623454595">+216 23 454 595</a>
+                  <a href="tel:+21623454595" class="contact-row">
+                    <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+                    +216 23 454 595
+                  </a>
                 </li>
                 <li>
-                  <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
-                  <span>Tunis, Tunisia</span>
+                  <div class="contact-row">
+                    <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+                    <span>Tunis, Tunisia</span>
+                  </div>
                 </li>
                 <li>
-                  <i class="bi bi-linkedin" aria-hidden="true"></i>
                   <a
                     href="https://www.linkedin.com/in/ahmed-guebsi/"
+                    class="contact-row"
                     target="_blank"
                     rel="noopener noreferrer"
-                    >linkedin.com/in/ahmed-guebsi</a
                   >
+                    <i class="bi bi-linkedin" aria-hidden="true"></i>
+                    linkedin.com/in/ahmed-guebsi
+                  </a>
                 </li>
                 <li>
-                  <i class="bi bi-github" aria-hidden="true"></i>
                   <a
                     href="https://github.com/ahmedguebsi"
+                    class="contact-row"
                     target="_blank"
                     rel="noopener noreferrer"
-                    >github.com/ahmedguebsi</a
                   >
+                    <i class="bi bi-github" aria-hidden="true"></i>
+                    github.com/ahmedguebsi
+                  </a>
                 </li>
               </ul>
             </div>
@@ -949,8 +959,7 @@
       AOS.init({ duration: 700, offset: 80, once: true });
     </script>
 
-    <!-- particles.js (library + init) -->
-    <script src="js/particles.js"></script>
+    <!-- Neural-network canvas animation -->
     <script src="js/app.js"></script>
 
     <!-- custom -->
